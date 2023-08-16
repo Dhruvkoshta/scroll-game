@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helventica',cursive;
+
+        }
+        body{
+            overflow: hidden;
+            
+        }
+        /* #loading{
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+
+        } */
+        #canvas1{
+            border: 2px solid black;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                max-width: 100%;
+                max-height: 100%;
+            }
+           img{
+                display: none;
+            }
+    </style>
+</head>
+<body>
+    
+    <canvas id="canvas1"></canvas>
+    <img src="./player.png" alt="" id="playerImage">
+
+    <img src="./backgroundLayers/layer-1.png" alt="" id="layer1">
+    <img src="./backgroundLayers/layer-2.png" alt="" id="layer2">
+    <img src="./backgroundLayers/layer-3.png" alt="" id="layer3">
+    <img src="./backgroundLayers/layer-4.png" alt="" id="layer4">
+    <img src="./backgroundLayers/layer-5.png" alt="" id="layer5">
+    
+    <img src="./enemyImages/enemy_fly.png" alt="" id="enemy_fly">
+    <img src="./enemyImages/enemy_plant.png" alt="" id="enemy_plant">
+    <img src="./enemyImages/enemy_spider_big.png" alt="" id="enemy_spider_big">
+
+    <img src="./fire.png" alt="" id="fire">
+    <img src="./boom.png" alt="" id="collision">
+
+   <!-- <h1 id="loading">LOADING...</h1> -->
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
